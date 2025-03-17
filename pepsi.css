@@ -9,12 +9,12 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background:linear-gradient(#CF2425,#DA6062 50%,#DA6062 60%,#DA3B3F);
+    background:linear-gradient(#1e52ac,#4da3e6 50%,#1897ce 60%,#24489b);
 }
 
 header, footer {
     height: 100px;
-    background-color: #CF2425;
+    background-color: #3122cf;
     color: #FFFFFF;
     display: flex;
     align-items: center;
