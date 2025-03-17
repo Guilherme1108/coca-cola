@@ -7,8 +7,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     background:linear-gradient(#1e52ac,#4da3e6 50%,#1897ce 60%,#24489b);
 }
 
@@ -16,20 +15,18 @@ header, footer {
     height: 100px;
     background-color: #3122cf;
     color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
     padding: 0 20px;
+    align-items: center;
 }
 
 header {
     height: 100px;
-    display: flex;
-    align-items: center;
+    display: grid;
     gap: 24px;
     color: #FFFFFF;
     padding-left: 75px;
-    justify-content: flex-start;
+    grid-template-columns: 32px 44px 100px;
 }
 
 header span {
@@ -42,7 +39,7 @@ a {
 
 main {
     flex-grow: 1;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
@@ -65,22 +62,24 @@ main {
     font-size: 2.5rem;
     width: 240px;
     transform: translateX(-100%);
-    text-align: end;
 }
 
 .content-image {
     height: 85vh;
+    padding: 0%;
+    margin-top: -5%;
+    margin-bottom: -5%;
+    
 }
 
 footer {
     height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
     padding-right: 75px;
     padding-left: 75px;
     color: #FFFFFF;
     font-weight: 100;
+    grid-template-columns: 800px 44px 100px;
 }
 
 footer div {
@@ -90,6 +89,13 @@ footer div {
 @media (max-width: 768px) {
     header {
         padding-left: 25px;
+    }
+
+    main {
+        flex-grow: 1;
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
 
     .content-text {
@@ -105,6 +111,10 @@ footer div {
     }
 
     footer {
-        padding: 0px 25px;
+        height: 100px;
+        display: grid;
+        gap: 50px;
+        color: #FFFFFF;
+        padding-left: 75px;
     }
 }
